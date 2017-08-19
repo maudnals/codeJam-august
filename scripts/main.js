@@ -9,10 +9,10 @@ Notification.requestPermission(function(result) {
           image: 'images/cat.jpg',
           icon: 'images/cat.jpg',
           badge: 'images/cat.jpg',
-          vibrate: [200, 100, 200, 100, 200, 100, 200]
+          vibrate: [50, 100, 150, 100, 250, 100, 350, 100, 450, 100, 550, 100, 650]
         };
         registration.showNotification('♥️ WOW!!! YOU SUCK!!! ♥️', options);
-      }, 1000);
+      }, 6000);
       
     });
   }

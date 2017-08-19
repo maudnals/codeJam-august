@@ -178,11 +178,44 @@
 // }
 
 
+
 navigator.serviceWorker.register('sw.js');
 Notification.requestPermission(function(result) {
   if (result === 'granted') {
     navigator.serviceWorker.ready.then(function(registration) {
-      registration.showNotification('Notification with ServiceWorker');
+      setInterval(function(){
+        const options = {
+          body: 'You really do',
+          image: 'images/merkel.jpg',
+          icon: 'images/merkel.jpg',
+          badge: 'images/merkel.jpg',
+          vibrate: [200, 100, 200, 100, 200, 100, 200]
+        };
+        registration.showNotification('🖕 WOW!!! YOU SUCK!!! 🖕', options);
+      }, 1000);
+      
     });
   }
 })
+
+
+// function displayNotification() {
+//   if (Notification.permission == 'granted') {
+//     navigator.serviceWorker.getRegistration().then(function(reg) {
+//     const options = {
+//         body: 'You really do',
+//         image: 'images/merkel.jpg',
+//         icon: 'images/merkel.jpg',
+//         badge: 'images/merkel.jpg',
+//         vibrate: [200, 100, 200, 100, 200, 100, 200]
+//     };
+//     setInterval(function(){
+//       reg.showNotification('🖕 WOW!!! YOU SUCK!!! 🖕', options);;
+//     }, 1200);
+//     });
+//   }
+// }
+
+// Notification.requestPermission(function(status) {
+//     console.log('Notification permission status:', status);
+// });

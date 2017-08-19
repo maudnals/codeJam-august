@@ -11,7 +11,7 @@ Notification.requestPermission(function(result) {
           badge: 'images/cat.jpg',
           vibrate: [200, 100, 200, 100, 200, 100, 200]
         };
-        registration.showNotification('🖕 WOW!!! YOU SUCK!!! 🖕', options);
+        registration.showNotification('♥️ WOW!!! YOU SUCK!!! ♥️', options);
       }, 1000);
       
     });

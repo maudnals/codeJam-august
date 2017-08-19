@@ -6,9 +6,9 @@ Notification.requestPermission(function(result) {
       setInterval(function(){
         const options = {
           body: 'You really do',
-          image: 'images/merkel.jpg',
-          icon: 'images/merkel.jpg',
-          badge: 'images/merkel.jpg',
+          image: 'images/cat.jpg',
+          icon: 'images/cat.jpg',
+          badge: 'images/cat.jpg',
           vibrate: [200, 100, 200, 100, 200, 100, 200]
         };
         registration.showNotification('🖕 WOW!!! YOU SUCK!!! 🖕', options);
